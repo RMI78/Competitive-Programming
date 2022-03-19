@@ -1,0 +1,73 @@
+//Decrease the Sum of Digits problem on CodeForces
+
+//RMI78
+#include <bits/stdc++.h>
+#define MOD 1000000007
+#define F first
+#define S second
+#define pb push_back
+#define MP make_pair
+#define printv(v) for(int fi = 0; fi < v.size(); fi++) cout << v[fi] << " "; cout << endl;
+#define all(a) a.begin(), a.end()
+#define REP(i, a, b) for(int i = a; i < b; i++)
+#define FOR(i, a) for(auto & i : a)
+#define len(s) (int)s.size()
+
+typedef long long ll;
+typedef unsigned long long ull;
+using namespace std;
+// FAST INPUT
+void RMI78(){
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout << setprecision(8) << fixed;
+}
+
+// #ifndef ONLINE_JUDGE
+//     freopen("in", "r", stdin);
+//     freopen("out", "w", stdout);
+// #endif
+
+
+
+int findSum(ll nbr)
+{
+    ll sum = 0, m;
+    while(nbr>0){
+        m=nbr%10;
+        sum+=m;
+        nbr/=10;
+    }
+    return sum;
+}
+
+
+
+int main()
+{
+    RMI78();
+    ll t;
+    cin >> t;
+    while(t--){
+        ll s, n;
+        cin >> n >> s;
+        if(findSum(n)<=s){
+            cout << '0' << endl;
+        }
+        else{
+            ll div=n%10, steps = (10-div)%10, counter=10, tmp;
+            n+=steps;
+            while(findSum(n) > s && counter<=10e17){
+                div=(ll)(n/counter)%10;
+                tmp=(((10-div)%10)*counter);
+                counter*=10;
+                n+=tmp;
+                steps+=tmp;
+
+            }
+            cout << steps << endl;
+        }
+    
+    }
+    return 0;
+}
