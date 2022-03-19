@@ -1,4 +1,4 @@
-//GCD Arrays problem on CodeForce
+//GCD Arrays problem on CodeForces
 
 //RMI78
 #include <bits/stdc++.h>
