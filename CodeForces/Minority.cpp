@@ -1,4 +1,4 @@
-//Minority problem on CodeForce
+//Minority problem on CodeForces
 
 //RMI78
 #include <bits/stdc++.h>
