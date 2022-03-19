@@ -1,4 +1,4 @@
-//Min Max Swap problem on CodeForce
+//Min Max Swap problem on CodeForces
 
 //RMI78
 #include <bits/stdc++.h>
