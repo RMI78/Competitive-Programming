@@ -1,4 +1,4 @@
-//Minimum Grid Path problem on CodeForce
+//Minimum Grid Path problem on CodeForces
 
 //RMI78
 #include <bits/stdc++.h>
