@@ -1,4 +1,4 @@
-//Div 7 problem on CodeForce
+//Div 7 problem on CodeForces
 
 //RMI78
 #include <bits/stdc++.h>
