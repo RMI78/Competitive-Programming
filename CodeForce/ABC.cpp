@@ -1,4 +1,4 @@
-//ABC problem on CodeForce
+//ABC problem on CodeForces
 
 #include <bits/stdc++.h>
 #define MOD 1000000007
